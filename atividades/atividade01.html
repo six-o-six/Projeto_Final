@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Atividade - Aula 1</title>
-  <link rel="stylesheet" href="atividade1.css" />
+  <link rel="stylesheet" href="../styles/atividade.css" />
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="img/scratch.png" alt="Logo Scratch" />
+      <img src="../img/scratch.png" alt="Logo Scratch" />
     </div>
     <nav>
       <ul>
@@ -35,72 +35,70 @@
       </ul>
     </nav>
     <div class="container-perfil">
-      <img id="icone-perfil" src="img/icon-user.png" alt="Perfil" />
+      <img id="icone-perfil" src="../img/icon-user.png" alt="Perfil" />
       <div class="menu-perfil">
         <p id="user-info">Usuário</p>
         <button onclick="logout()">Sair</button>
       </div>
     </div>
   </header>
-
-  <main class="container">
-    <form id="form-paginas">
-      <!-- Página 1 -->
-      <div class="pagina" id="pagina1">
-        <h2>Atividade - Aula 1</h2>
-        <label>1. Descreva o que é lógica de programação, e o que é uma linguagem de programação:
-          <textarea required></textarea>
-        </label>
-        <label>2. Descreva o que é uma linguagem de programação em blocos, o que é o Scratch e para que ele é utilizado?
-          <textarea required></textarea>
-        </label>
-        <label>3. O que você acha que é possível criar com a programação de computadores?
-          <textarea required></textarea>
-        </label>
-        <label>4. Quais ações do dia a dia você acha que podem ser controladas por computadores?
-          <textarea required></textarea>
-        </label>
-        <label>5. O que você gostaria de ensinar o computador a fazer?
-          <textarea required></textarea>
-        </label>
-        <div class="navegacao">
-          <span>Página 1/2</span>
-          <button type="button" onclick="mudarPagina(2)">PRÓXIMO</button>
-        </div>
-      </div>
-
-      <!-- Página 2 -->
-      <div class="pagina" id="pagina2" style="display: none;">
-        <h2>Feedback - Aula 1</h2>
-        <label>1. O que você achou do conteúdo apresentado na aula? *</label>
-        <div class="avaliacao">
-          <label><input type="radio" name="conteudo" value="1" required> 1</label>
-          <label><input type="radio" name="conteudo" value="2"> 2</label>
-          <label><input type="radio" name="conteudo" value="3"> 3</label>
-          <label><input type="radio" name="conteudo" value="4"> 4</label>
-          <label><input type="radio" name="conteudo" value="5"> 5</label>
+    <main class="container">
+        <form id="form-paginas">
+        <!-- Página 1 -->
+        <div class="pagina" id="pagina1">
+            <h2>Atividade - Aula 1</h2>
+            <label>1. Descreva o que é lógica de programação, e o que é uma linguagem de programação:
+            <textarea required></textarea>
+            </label>
+            <label>2. Descreva o que é uma linguagem de programação em blocos, o que é o Scratch e para que ele é utilizado?
+            <textarea required></textarea>
+            </label>
+            <label>3. O que você acha que é possível criar com a programação de computadores?
+            <textarea required></textarea>
+            </label>
+            <label>4. Quais ações do dia a dia você acha que podem ser controladas por computadores?
+            <textarea required></textarea>
+            </label>
+            <label>5. O que você gostaria de ensinar o computador a fazer?
+            <textarea required></textarea>
+            </label>
+            <div class="navegacao">
+            <span>Página 1/2</span>
+            <button type="button" onclick="mudarPagina(2)">PRÓXIMO</button>
+            </div>
         </div>
 
-        <label>2. Como você avalia a aula? *</label>
-        <label><input type="radio" name="avaliacao" value="Excelente" required> Excelente</label>
-        <label><input type="radio" name="avaliacao" value="Boa"> Boa</label>
-        <label><input type="radio" name="avaliacao" value="Regular"> Regular</label>
+        <!-- Página 2 -->
+        <div class="pagina" id="pagina2" style="display: none;">
+            <h2>Feedback - Aula 1</h2>
+            <label>1. O que você achou do conteúdo apresentado na aula? *</label>
+            <div class="avaliacao">
+            <label><input type="radio" name="conteudo" value="1" required> 1</label>
+            <label><input type="radio" name="conteudo" value="2"> 2</label>
+            <label><input type="radio" name="conteudo" value="3"> 3</label>
+            <label><input type="radio" name="conteudo" value="4"> 4</label>
+            <label><input type="radio" name="conteudo" value="5"> 5</label>
+            </div>
 
-        <label>3. O que poderia ser melhorado na aula para torná-la mais proveitosa para você? *</label>
-        <textarea required></textarea>
+            <label>2. Como você avalia a aula? *</label>
+            <label><input type="radio" name="avaliacao" value="Excelente" required> Excelente</label>
+            <label><input type="radio" name="avaliacao" value="Boa"> Boa</label>
+            <label><input type="radio" name="avaliacao" value="Regular"> Regular</label>
 
-        <label>4. Espaço aberto para sugestões, elogios e críticas construtivas *</label>
-        <textarea required></textarea>
+            <label>3. O que poderia ser melhorado na aula para torná-la mais proveitosa para você? *</label>
+            <textarea required></textarea>
 
-        <div class="navegacao">
-          <button type="button" onclick="mudarPagina(1)">ANTERIOR</button>
-          <span>Página 2/2</span>
-          <button type="submit">ENVIAR</button>
+            <label>4. Espaço aberto para sugestões, elogios e críticas construtivas *</label>
+            <textarea required></textarea>
+
+            <div class="navegacao">
+            <button type="button" onclick="mudarPagina(1)">ANTERIOR</button>
+            <span>Página 2/2</span>
+            <button type="submit">ENVIAR</button>
+            </div>
         </div>
-      </div>
-    </form>
-  </main>
-
-  <script src="atividade1.js"></script>
+        </form>
+    </main>
+  <script src="../scripts/atividade.js"></script>
 </body>
 </html>

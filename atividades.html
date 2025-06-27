@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso de Programacao I com Scratch</title>
+  <title>Atividades</title>
   <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/atividades.css" />
 </head>
 <body>
   <header>
@@ -13,15 +14,15 @@
     </div>
     <nav>
       <ul>
-        <li class="item-menu"><a href="#" onclick="navigate('inicio')">Início</a></li>
+        <li class="item-menu"><a href="index.html">Início</a></li>
         <li class="item-menu"><a href="#" onclick="navigate('diario')">Diário de Classe</a></li>
         <li class="item-menu"><a href="#" onclick="navigate('materiais')">Materiais</a></li>
-        <li class="item-menu"><a href="atividades/atividade01.html">Atividades</a></li>
+        <li class="item-menu"><a href="atividades.html">Atividades</a></li>
         <li class="item-menu dropdown">
           <a href="#" class="botao-dropdown">Links Externos ▾</a>
           <div class="menu-dropdown">
-            <a href="https://wayground.com/join" target="_blank" rel="noopener noreferrer">Quizziz</a>
-            <a href="https://scratch.mit.edu/" target="_blank" rel="noopener noreferrer">Scratch</a>
+            <a href="https://wayground.com/join" target="_blank">Quizziz</a>
+            <a href="https://scratch.mit.edu/" target="_blank">Scratch</a>
           </div>
         </li>
         <li class="item-menu dropdown">
@@ -36,17 +37,17 @@
     </nav>
     <div class="container-perfil">
       <img id="icone-perfil" src="img/icon-user.png" alt="Perfil" />
-      <div class="menu-perfil">
+      <div class="menu-perfil" id="perfil-menu">
         <p id="user-info">Usuário</p>
         <button onclick="logout()">Sair</button>
       </div>
     </div>
   </header>
-  <main>
-    <section id="conteudo">
-      <!-- Conteúdo carregado via JS -->
-    </section>
+
+  <main class="atividade-lista" id="lista-atividades">
+    <!-- Atividades serão inseridas via JS -->
   </main>
-  <script src="scripts/index.js"></script>
+
+  <script src="scripts/atividades.js"></script>
 </body>
 </html>
