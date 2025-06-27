@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1f52a0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.login-left {
+  background-color: #5b9bd5;
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-left h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.scratch-logo {
+  width: 120px;
+}
+
+.login-right {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right h2 {
+  margin-bottom: 20px;
+}
+
+.login-right input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.login-right button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #1f52a0;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
